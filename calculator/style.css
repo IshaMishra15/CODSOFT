@@ -1,0 +1,44 @@
+
+.cont{
+    height:100vh;
+    display: grid;
+       justify-content: center;
+       justify-items: center;
+       align-items: center;
+}
+#calc{
+    width:60%;
+    background-color: palevioletred;
+    border-radius: 5%;
+}
+#buttons{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5%;
+    column-gap: 4%;
+    row-gap: 2%;   
+}
+.input{
+    margin:5%;
+    width: 100%;
+    padding: 4%;
+    text-align: end;
+}
+.btn{
+    margin:5%;
+    padding:15%;
+    font-weight: bold;
+    font-size: 140%;
+}
+.btn:hover
+{
+    background-color: black;
+    color:white;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}

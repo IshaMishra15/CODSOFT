@@ -1,0 +1,333 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    scroll-behavior: smooth;
+    border:none;
+    outline: none;
+    background-color: whitesmoke;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rowdies', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    background-color: whitesmoke;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    page-break-after: auto;
+    padding:28px 11%;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+}
+.logo img{
+    width: 20%;
+    height:auto;
+}
+
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: palevioletred;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 40px;
+    transition: all ease 0.4s;
+
+}
+.navlist a:hover{
+    color: black;
+    
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+#menu-icon{
+    z-index: 10001;
+    cursor: pointer;
+    height: 40px;
+    display: none;
+}
+.lists a{
+    color: black;
+    text-decoration: none;
+    background: transparent;
+
+}
+section{
+    padding: 120px 19% 100px;
+    text-align: center;
+}
+.home{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.hero-text h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    word-spacing: 10px;
+}
+
+.hero-text h1{
+    font-family: 'Dosis',sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero-text h4{
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 15px;
+    margin-bottom: 3.5rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 40px;
+    color: black;
+    background-color:palevioletred;
+    border-radius: 60px;
+    font-weight: 600;
+    transition: all ease .50s;
+    box-shadow: 5px 5px 5px black;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+}
+@media(max-width:1600px)
+{
+    header{
+        padding: 14px 4%;
+    }
+    section{
+        padding: 100px 5% 80px;
+    }
+}
+@media (max-width:1200px){
+    .home{
+        min-height: 90vh;
+    }
+    .navlist a{
+        margin: 0 20px; 
+    }
+}
+@media(max-width:870px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navlist{
+        position: absolute;
+        top: -800px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        padding: 20px 0;
+        text-align: left;
+        transition: all 0.5s ease;
+    }
+    .navlist a{
+        display: block;
+        font-size: 22px;
+        padding: 12px 0;
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+@media(max-width:660px)
+{
+    .home{
+        min-height: 80vh;
+    }
+    .hero-text h4{
+        font-size: 18px;
+        word-spacing: 10px;
+        margin-bottom: 30px;
+    }
+    .btn{
+        padding: 10px 35px;
+    }
+}
+
+.aboutus{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content:space-around;
+    padding: 100px;
+}
+.about-left-section img{
+    height: 400px;
+    width: 300px;
+    box-shadow: 5px 5px 5px black;
+}
+.about-right-section{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 100px;
+    flex-wrap: wrap;
+    letter-spacing: 2px;
+  }
+.container1 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 30px;
+  }
+.box {
+    width: 100%;
+    height: 100%;
+    font-size: 225px;
+    position: absolute;
+    opacity: 0.7; 
+  }
+.overlay {
+    z-index: 9;
+    margin-top: 110px;
+    margin-left:100px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0.1px 0.1px 0.1px black;
+    padding-right: 40%;
+   
+  }
+.overlay:hover
+  {
+    transform:scale(1.1);
+    transition: 200ms ;
+    color:black;
+    text-shadow: 1px 1px 1px black;
+  }
+.service-heading{
+    text-align: center;
+  }
+.sign-up-form{
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: white;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+}
+.sign-up-form h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+button{
+    color: white;
+    width:100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+form,p{
+    background-color: white;
+}
+.signup-btn{
+    background-color: #1c8adb;
+}
+.google-btn{
+    background-color: #21afde;
+}
+p a{
+    text-decoration: none;
+}
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+.or{
+    background: white;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+.signup-icon{
+    width:100px;
+    margin-top: -60px;
+    
+}
+.cont{
+    padding: 40px;
+    height:150px;
+  }
+.cont:hover{
+    transform:scale(1.1);
+    transition: 200ms;
+    opacity: 0.3;
+}
+footer{
+    padding: 60px;
+    font-size: 20px;
+    background-color: black;
+    height: 150px;
+    color:white;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    page-break-after: auto;
+    border-bottom: 1px solid transparent;
+    transition: all ease .50s;
+}
+.footer-text{
+    background-color: black;
+}

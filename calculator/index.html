@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="cont">
+    <div id="calc" style="border:10px solid black">
+        <h1 style="margin-left: 4%;">Calculator</h1>
+        <div>
+            <input type="text" class="input" id="inputext" name="display" placeholder="0" style="width:90%; height:70px;font-size: 40px;"><br>
+        </div>
+        <div id="buttons">
+            <input type="button" class="btn" value="0" onclick="input('0')">
+            <input type="button" class="btn" value="1" onclick="input('1')">
+            <input type="button" class="btn" value="2" onclick="input('2')">
+            <input type="button" class="btn" value="+" onclick="input('+')">
+            <input type="button" class="btn" value="3" onclick="input('3')">
+            <input type="button" class="btn" value="4" onclick="input('4')">
+            <input type="button" class="btn" value="5" onclick="input('5')">
+            <input type="button" class="btn" value="-" onclick="input('-')">
+            <input type="button" class="btn" value="6" onclick="input('6')">
+            <input type="button" class="btn" value="7" onclick="input('7')">
+            <input type="button" class="btn" value="8" onclick="input('8')">
+            <input type="button" class="btn" value="*" onclick="input('*')">
+            <input type="button" class="btn" value="9" onclick="input('9')">
+            <input type="button" class="btn" value="AC" onclick="allclear()">
+            <input type="button" class="btn" value="=" onclick="calculate()">
+            <input type="button" class="btn" value="/" onclick="input('/')">
+        </div>
+    </div>
+</div> 
+    <script src="index.js">
+        
+    </script>
+</body>
+</html>
